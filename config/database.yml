@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: mysql
+  password: 123456
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: login_app_development
+
+test:
+  <<: *default
+  database: login_app_test
+
+production:
+  <<: *default
+  database: login_app_production
+  username: login_app
+  password: <%= ENV['LOGIN_APP_DATABASE_PASSWORD'] %>
