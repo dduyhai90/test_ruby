@@ -52,6 +52,8 @@ gem "bootsnap", require: false
 
 gem "bcrypt"
 
+gem "paranoia"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

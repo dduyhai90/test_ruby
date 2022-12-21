@@ -140,6 +140,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.10-x64-mingw-ucrt)
       racc (~> 1.4)
+    paranoia (2.6.1)
+      activerecord (>= 5.1, < 7.1)
     public_suffix (5.0.1)
     puma (5.6.5)
       nio4r (~> 2.0)
@@ -255,6 +257,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   mysql2 (~> 0.5.3)
+  paranoia
   puma (~> 5.0)
   rails (~> 7.0.4)
   redis (~> 4.0)
