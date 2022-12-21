@@ -54,6 +54,8 @@ gem "bcrypt"
 
 gem "paranoia"
 
+gem 'slim-rails'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_20_101343) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_21_065801) do
+  create_table "actions", charset: "utf8mb3", force: :cascade do |t|
+    t.string "name"
+    t.string "url"
+    t.integer "parent_id"
+    t.integer "status_id"
+    t.integer "display_order"
+    t.string "icon"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", charset: "utf8mb3", force: :cascade do |t|
     t.string "name"
     t.string "password_digest"
